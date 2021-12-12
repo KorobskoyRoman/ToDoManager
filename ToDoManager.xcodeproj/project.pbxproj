@@ -16,6 +16,10 @@
 		9CE8F7C72762652700A6C26F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7C62762652700A6C26F /* Task.swift */; };
 		9CE8F7C92762662800A6C26F /* TaskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7C82762662800A6C26F /* TaskStorage.swift */; };
 		9CE8F7CD2762756800A6C26F /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7CC2762756800A6C26F /* TaskCell.swift */; };
+		9CE8F7D12766654E00A6C26F /* TaskEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7D02766654E00A6C26F /* TaskEditController.swift */; };
+		9CE8F7D32766760000A6C26F /* TaskTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7D22766760000A6C26F /* TaskTypeController.swift */; };
+		9CE8F7D62766780F00A6C26F /* TaskTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7D42766780F00A6C26F /* TaskTypeCell.swift */; };
+		9CE8F7D72766780F00A6C26F /* TaskTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE8F7D52766780F00A6C26F /* TaskTypeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		9CE8F7C62762652700A6C26F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		9CE8F7C82762662800A6C26F /* TaskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStorage.swift; sourceTree = "<group>"; };
 		9CE8F7CC2762756800A6C26F /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		9CE8F7D02766654E00A6C26F /* TaskEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditController.swift; sourceTree = "<group>"; };
+		9CE8F7D22766760000A6C26F /* TaskTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeController.swift; sourceTree = "<group>"; };
+		9CE8F7D42766780F00A6C26F /* TaskTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCell.swift; sourceTree = "<group>"; };
+		9CE8F7D52766780F00A6C26F /* TaskTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 				9CE8F7C52762651600A6C26F /* Model */,
 				9CE8F7CE27665F4B00A6C26F /* Controllers */,
 				9CE8F7CF27665F5700A6C26F /* Supports file */,
+				9CE8F7B5276262A500A6C26F /* Main.storyboard */,
 				9CE8F7BD276262A800A6C26F /* Info.plist */,
 			);
 			path = ToDoManager;
@@ -92,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				9CE8F7CC2762756800A6C26F /* TaskCell.swift */,
+				9CE8F7D42766780F00A6C26F /* TaskTypeCell.swift */,
+				9CE8F7D52766780F00A6C26F /* TaskTypeCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -100,7 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				9CE8F7C32762636700A6C26F /* TaskListController.swift */,
-				9CE8F7B5276262A500A6C26F /* Main.storyboard */,
+				9CE8F7D02766654E00A6C26F /* TaskEditController.swift */,
+				9CE8F7D22766760000A6C26F /* TaskTypeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -176,6 +188,7 @@
 			files = (
 				9CE8F7BC276262A800A6C26F /* LaunchScreen.storyboard in Resources */,
 				9CE8F7B9276262A800A6C26F /* Assets.xcassets in Resources */,
+				9CE8F7D72766780F00A6C26F /* TaskTypeCell.xib in Resources */,
 				9CE8F7B7276262A500A6C26F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,8 +204,11 @@
 				9CE8F7B0276262A500A6C26F /* AppDelegate.swift in Sources */,
 				9CE8F7B2276262A500A6C26F /* SceneDelegate.swift in Sources */,
 				9CE8F7C92762662800A6C26F /* TaskStorage.swift in Sources */,
+				9CE8F7D32766760000A6C26F /* TaskTypeController.swift in Sources */,
 				9CE8F7CD2762756800A6C26F /* TaskCell.swift in Sources */,
 				9CE8F7C42762636700A6C26F /* TaskListController.swift in Sources */,
+				9CE8F7D12766654E00A6C26F /* TaskEditController.swift in Sources */,
+				9CE8F7D62766780F00A6C26F /* TaskTypeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
