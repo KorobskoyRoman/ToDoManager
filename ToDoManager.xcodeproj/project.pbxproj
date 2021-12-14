@@ -20,6 +20,7 @@
 		9CE8F7D32766760000A6C26F /* TaskTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7D22766760000A6C26F /* TaskTypeController.swift */; };
 		9CE8F7D62766780F00A6C26F /* TaskTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7D42766780F00A6C26F /* TaskTypeCell.swift */; };
 		9CE8F7D72766780F00A6C26F /* TaskTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE8F7D52766780F00A6C26F /* TaskTypeCell.xib */; };
+		9CE8F7DA2767B0BF00A6C26F /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8F7D92767B0BF00A6C26F /* ShowAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9CE8F7D22766760000A6C26F /* TaskTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeController.swift; sourceTree = "<group>"; };
 		9CE8F7D42766780F00A6C26F /* TaskTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCell.swift; sourceTree = "<group>"; };
 		9CE8F7D52766780F00A6C26F /* TaskTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCell.xib; sourceTree = "<group>"; };
+		9CE8F7D92767B0BF00A6C26F /* ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		9CE8F7CE27665F4B00A6C26F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9CE8F7D82767B0A800A6C26F /* Extensions */,
 				9CE8F7C32762636700A6C26F /* TaskListController.swift */,
 				9CE8F7D02766654E00A6C26F /* TaskEditController.swift */,
 				9CE8F7D22766760000A6C26F /* TaskTypeController.swift */,
@@ -126,6 +129,14 @@
 				9CE8F7BA276262A800A6C26F /* LaunchScreen.storyboard */,
 			);
 			path = "Supports file";
+			sourceTree = "<group>";
+		};
+		9CE8F7D82767B0A800A6C26F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CE8F7D92767B0BF00A6C26F /* ShowAlert.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 				9CE8F7B2276262A500A6C26F /* SceneDelegate.swift in Sources */,
 				9CE8F7C92762662800A6C26F /* TaskStorage.swift in Sources */,
 				9CE8F7D32766760000A6C26F /* TaskTypeController.swift in Sources */,
+				9CE8F7DA2767B0BF00A6C26F /* ShowAlert.swift in Sources */,
 				9CE8F7CD2762756800A6C26F /* TaskCell.swift in Sources */,
 				9CE8F7C42762636700A6C26F /* TaskListController.swift in Sources */,
 				9CE8F7D12766654E00A6C26F /* TaskEditController.swift in Sources */,

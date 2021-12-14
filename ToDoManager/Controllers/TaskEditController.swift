@@ -28,7 +28,7 @@ class TaskEditController: UITableViewController {
             taskStatusSwitch.isOn = true
         }
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,11 +55,19 @@ class TaskEditController: UITableViewController {
     
     @IBAction func saveTask(_ sender: UIBarButtonItem) {
         
-        let title = taskTitle?.text ?? ""
+        var title = taskTitle?.text ?? ""
         let type = taskType
         let status: TaskStatus = taskStatusSwitch.isOn ? .completed : .planned
-        doAfterEdit?(title, type, status)
-        navigationController?.popViewController(animated: true)
+        
+        if title.isEmpty {
+            showAlert(title: "Ошибка!", message: "Не заполнено название!")
+//        } else if title.trimmingCharacters(in: .whitespacesAndNewlines) = false {
+//            showAlert(title: "Ошибка!", message: "Удалите лишние пробелы")
+        } else {
+            title = title.trimmingCharacters(in: .whitespacesAndNewlines)
+            doAfterEdit?(title, type, status)
+            navigationController?.popViewController(animated: true)
+        }
+        
     }
-    
 }

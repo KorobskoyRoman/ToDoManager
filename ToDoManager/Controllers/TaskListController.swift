@@ -20,6 +20,12 @@ class TaskListController: UITableViewController {
                     return task1position < task2position
                 })
             }
+            //save tasks
+            var savingArray: [TaskProtocol] = []
+            tasks.forEach { _, value in
+                savingArray += value
+            }
+            tasksStorage.saveTasks(savingArray)
         }
     }
     var sectionsTypesPosition: [TaskPriority] = [.important, .normal]
@@ -44,6 +50,11 @@ class TaskListController: UITableViewController {
         
         let taskType = sectionsTypesPosition[section]
         guard let currentsTasksType = tasks[taskType] else { return 0 }
+        
+//        if tasks.isEmpty {
+//            let cell = UITableViewCell(style: .default, reuseIdentifier: "empty")
+//            cell.textLabel?.text = ""
+//        }
         
         return currentsTasksType.count
     }
@@ -134,6 +145,7 @@ class TaskListController: UITableViewController {
             cell.title.textColor = .lightGray
             cell.symbol.textColor = .lightGray
         }
+        
         return cell
     }
     
@@ -216,6 +228,15 @@ class TaskListController: UITableViewController {
                 tasks[type]?.append(newTask)
                 tableView.reloadData()
             }
+        }
+    }
+    
+    func setTask (_ taskCollection: [TaskProtocol]) {
+        sectionsTypesPosition.forEach { taskType in
+            tasks[taskType] = []
+        }
+        taskCollection.forEach { task in
+            tasks[task.type]?.append(task)
         }
     }
 }
